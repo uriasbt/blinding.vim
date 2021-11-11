@@ -11,8 +11,8 @@ set background=light
 highlight clear
 syntax reset
 
-let g:colors_name="bliding"
-let colors_name="bliding"
+let g:colors_name="blinding"
+let colors_name="blinding"
 
 let s:black       = { "gui": "#383a42", "cterm": "237" }
 let s:red         = { "gui": "#E53935", "cterm": "167" }
