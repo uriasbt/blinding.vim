@@ -15,13 +15,13 @@ let g:colors_name="bliding"
 let colors_name="bliding"
 
 let s:black       = { "gui": "#383a42", "cterm": "237" }
-let s:red         = { "gui": "#e45649", "cterm": "167" }
-let s:green       = { "gui": "#50a14f", "cterm": "71" }
-let s:yellow      = { "gui": "#c18401", "cterm": "136" }
-let s:blue        = { "gui": "#0184bc", "cterm": "31" }
-let s:purple      = { "gui": "#a626a4", "cterm": "127" }
-let s:cyan        = { "gui": "#0997b3", "cterm": "31" }
-let s:white       = { "gui": "#e8e9ec", "cterm": "231" }
+let s:red         = { "gui": "#E53935", "cterm": "167" }
+let s:green       = { "gui": "#43A047", "cterm": "71" }
+let s:yellow      = { "gui": "#FFB300", "cterm": "136" }
+let s:blue        = { "gui": "#1E88E5", "cterm": "31" }
+let s:purple      = { "gui": "#5E35B1", "cterm": "127" }
+let s:cyan        = { "gui": "#00ACC1", "cterm": "31" }
+let s:white       = { "gui": "#FFFFFF", "cterm": "231" }
 
 let s:fg          = s:black
 let s:bg          = s:white
