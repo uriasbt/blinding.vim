@@ -1,10 +1,10 @@
 " ==============================================================================
-"   Name:        Bliding
+"   Name:        Blinding
 "   Author:      J Urias B Teixeira
 "   Url:         https://github.com/uriasbt/blinding.vim
 "   License:     The MIT License (MIT)
 "
-"   This is my atempt at a light vim color scheme based on One Half Light. https://github.com/sonph/onehalf
+"   This is my atempt at a light vim color scheme based on One Half Light
 " ==============================================================================
 
 set background=light
@@ -14,20 +14,20 @@ syntax reset
 let g:colors_name="blinding"
 let colors_name="blinding"
 
-let s:black       = { "gui": "#383a42", "cterm": "237" }
-let s:red         = { "gui": "#E53935", "cterm": "167" }
-let s:green       = { "gui": "#43A047", "cterm": "71" }
-let s:yellow      = { "gui": "#FFB300", "cterm": "136" }
-let s:blue        = { "gui": "#1E88E5", "cterm": "31" }
-let s:purple      = { "gui": "#5E35B1", "cterm": "127" }
-let s:cyan        = { "gui": "#00ACC1", "cterm": "31" }
-let s:white       = { "gui": "#FFFFFF", "cterm": "231" }
+let s:black       = { "gui": "#262626", "cterm": "235" }
+let s:red         = { "gui": "#d12f1b", "cterm": "160" }
+let s:green       = { "gui": "#2d8504", "cterm": "28" }
+let s:yellow      = { "gui": "#c18401", "cterm": "172" }
+let s:blue        = { "gui": "#156adf", "cterm": "27" }
+let s:purple      = { "gui": "#804fb8", "cterm": "92" }
+let s:cyan        = { "gui": "#0997b3", "cterm": "31" }
+let s:white       = { "gui": "#ffffff", "cterm": "231" }
 
 let s:fg          = s:black
 let s:bg          = s:white
 
 let s:comment_fg  = { "gui": "#a0a1a7", "cterm": "247" }
-let s:gutter_bg   = { "gui": "#e8e9ec", "cterm": "231" }
+let s:gutter_bg   = { "gui": "#ffffff", "cterm": "231" }
 let s:gutter_fg   = { "gui": "#d4d4d4", "cterm": "252" }
 let s:non_text    = { "gui": "#e5e5e5", "cterm": "252" }
 
@@ -159,6 +159,25 @@ call s:h("Error", s:red, s:gutter_bg, "")
 call s:h("Todo", s:purple, "", "")
 " }
 
+" Syntax colors for PHP {
+" Whitespace is defined in Neovim, not Vim.
+" See :help hl-Whitespace and :help hl-SpecialKey
+call s:h("phpConditional", s:red, "", "")
+call s:h("phpSpecialFunction", s:blue, "", "")
+call s:h("phpVarSelector", s:fg, "", "")
+call s:h("phpIdentifier", s:fg, "", "")
+call s:h("phpOperator", s:red, "", "")
+call s:h("phpDefine", s:red, "", "")
+call s:h("phpIntVar", s:fg, "", "")
+call s:h("phpType", s:red, "", "")
+call s:h("phpRegion", s:blue, "", "")
+call s:h("phpInclude", s:red, "", "")
+call s:h("phpConstant", s:blue, "", "")
+call s:h("phpBoolean", s:blue, "", "")
+call s:h("phpNumber", s:blue, "", "")
+call s:h("phpMemberSelector", s:red, "", "")
+" }
+
 " Plugins {
 " GitGutter
 call s:h("GitGutterAdd", s:green, s:gutter_bg, "")
@@ -169,6 +188,7 @@ call s:h("GitGutterChangeDelete", s:red, s:gutter_bg, "")
 call s:h("diffAdded", s:green, "", "")
 call s:h("diffRemoved", s:red, "", "")
 " }
+
 
 " Git {
 call s:h("gitcommitComment", s:comment_fg, "", "")
